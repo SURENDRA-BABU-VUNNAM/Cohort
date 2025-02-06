@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
+  line-height: 1.6;
+  color: white;
+  background-color: #0a0a0a;
+}
+
+.hero {
+  background: rgb(20, 14, 31);
+  background: linear-gradient(
+    180deg,
+    rgba(20, 14, 31, 1) 0%,
+    rgba(15, 12, 20, 1) 35%,
+    rgba(10, 10, 10, 1) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.announcement {
+  padding: 1rem;
+
+  margin-bottom: 2rem;
+}
+
+.announcement-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 6rem;
+  text-decoration: none;
+  padding: 2rem;
+  color: white;
+}
+
+.announcement-link:hover {
+  background-color: rgb(72, 61, 95);
+}
+
+.announcement-text {
+  font-size: 1.5rem;
+}
+
+.announcement-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  width: 3rem;
+  height: 2rem;
+  padding: 1rem;
+  border: 0.1rem solid gray;
+  background-color: rgba(187, 185, 185, 0.205);
+  border-radius: 1rem;
+}
+
+.hero-content {
+  width: 60rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-title {
+  font-size: 5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.hero-description {
+  font-size: 1.3rem;
+  width: 50rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: white;
+  margin: 1rem;
+  width: 10rem;
+  height: 5rem;
+  padding: 1rem;
+  border: 0.1rem solid gray;
+  background: rgb(106,67,236);
+background: linear-gradient(90deg, rgb(39, 92, 170) 0%, rgb(92, 67, 236) 35%, rgb(67, 92, 236) 100%);
+  border-radius: 5rem;
+  text-decoration: none;
+}
+
+.cta-button:hover {
+  background: rgb(67, 92, 236) 100%;
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding: 1rem;
+  }
+
+  .announcement-link {
+    font-size: 0.75rem;
+  }
+
+  .hero-content {
+    padding: 0 1rem;
+  }
+}

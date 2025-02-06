@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        /* section-1 */
+        section {
+            margin: 100px;
+        }
+
+        .flex-1 {
+            display: flex;
+            min-height: 600px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            border: 2px solid black;
+        }
+
+        .flex-item-2 {
+            order: 2;
+        }
+
+        /* section-2 */
+        .section-2 {
+            display: flex;
+        }
+
+        .flex-2 {
+            display: flex;
+            flex-direction: column;
+            border: 2px solid black;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .sub-flex {
+            border: 2px solid black;
+            display: flex;
+            gap: 30px;
+        }
+
+        .content {
+            border: 2px solid black;
+            flex: 2;
+        }
+
+        aside {
+            border: 2px solid black;
+            flex: 2;
+        }
+
+        /* section-3 */
+        .section-3 {
+            border: 2px solid black;
+
+        }
+
+        .flex-3 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .left {
+            flex: 1
+        }
+
+        .center {
+            flex: 2;
+        }
+
+        .right {
+            flex: 1;
+        }
+
+/* section 4 */
+        .section-4 {
+            border: 2px solid black;
+        }
+
+        .sidebar{
+            flex: 1;
+        }
+
+        .main{
+            flex: 5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="section-1">
+        <h2>youtube layout</h2>
+        <div class="flex-1">
+            <div class="flex-item-1">
+                <iframe width="400" height="400" src="https://www.youtube.com/embed/aRGdDy18qfY"
+                    title="Learn HTML iframes in 3 minutes 🖼️" frameborder="1" allowfullscreen></iframe>
+            </div>
+            <div class="flex-item-2 ">
+                <iframe width="400" height="400" src="https://www.youtube.com/embed/cc8heIkPqrM"
+                    title="iframe in HTML | use of iframe tag with practical | HTML Tutorial for beginners"
+                    frameborder="1" allowfullscreen>
+                </iframe>
+            </div>
+            <div class="flex-item-3">
+                <iframe width="400" height="400" src="https://www.youtube.com/embed/aRGdDy18qfY"
+                    title="Learn HTML iframes in 3 minutes 🖼️" frameborder="1" allowfullscreen>
+                </iframe>
+            </div>
+            <div class="flex-item-4">
+                <iframe width="400" height="400" src="https://www.youtube.com/embed/cc8heIkPqrM"
+                    title="iframe in HTML | use of iframe tag with practical | HTML Tutorial for beginners"
+                    frameborder="1" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-2">
+        <div class="flex-2">
+            <header>this is header section</header>
+            <div class="hero">
+                this is hero section <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus sint necessitatibus consequatur
+                expedita natus asperiores, nesciunt corporis pariatur distinctio velit fugit placeat consectetur tempore
+                animi aspernatur illo vitae? Aliquid, ex.
+            </div>
+            <div class="sub-flex">
+                <div class="content">this is content section <br> Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Aliquam adipisci libero rem enim error debitis sint voluptatum, voluptatibus doloremque magni?
+                    Sunt veritatis debitis adipisci tempora nobis asperiores aliquid eos inventore nulla magnam
+                    voluptatum non iure enim mollitia ex tenetur ducimus, atque molestiae incidunt! Itaque perferendis
+                    natus labore ex harum quisquam?</div>
+                <aside>
+                    this is aside <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, ea.
+                </aside>
+            </div>
+            <footer>this is footer <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, vero!</footer>
+        </div>
+    </section>
+
+    <section class="section-3">
+        <div class="flex-3">
+            <header>this is header section</header>
+
+            <div class="sub-flex">
+                <div class="left">
+                    this is left section <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus sint necessitatibus consequatur
+                    expedita
+                    natus asperiores, nesciunt corporis pariatur distinctio velit fugit placeat consectetur tempore
+                    animi aspernatur
+                    illo vitae? Aliquid, ex.
+                </div>
+                <div class="center">this is center content section <br> Lorem ipsum dolor sit amet consectetur
+                    adipisicing
+                    elit.
+                    Aliquam adipisci libero rem enim error debitis sint voluptatum, voluptatibus doloremque magni? Sunt
+                    veritatis debitis adipisci tempora nobis asperiores aliquid eos inventore nulla magnam voluptatum
+                    non iure
+                    enim mollitia ex tenetur ducimus, atque molestiae incidunt! Itaque perferendis natus labore ex harum
+                    quisquam?</div>
+                <div class="right">
+                    this is right <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, ea.
+                </div>
+            </div>
+            <footer>this is footer <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, vero!</footer>
+        </div>
+    </section>
+
+    <section class="section-4">
+        <div class="flex-3">
+            <header>this is header section</header>
+
+            <div class="sub-flex">
+                <div class="sidebar">
+                    this is sidebar section <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus sint necessitatibus consequatur
+                    expedita
+                    natus asperiores, nesciunt corporis pariatur distinctio velit fugit placeat consectetur tempore
+                    animi aspernatur
+                    illo vitae? Aliquid, ex.
+                </div>
+                <div class="main">this is main content section <br> Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit.
+                    Aliquam adipisci libero rem enim error debitis sint voluptatum, voluptatibus doloremque magni? Sunt
+                    veritatis debitis adipisci tempora nobis asperiores aliquid eos inventore nulla magnam voluptatum
+                    non iure
+                    enim mollitia ex tenetur ducimus, atque molestiae incidunt! Itaque perferendis natus labore ex harum
+                    quisquam?
+                </div>
+            </div>
+    </section>
+
+    <form action="">
+        
+        <div>
+            <input type="text" placeholder="Enter your name" required aria-placeholder="Enter your name" aria-required="true">
+        </div>
+        <div>
+            <input type="date" required aria-placeholder="Enter Your Date-of-Birth" aria-required="true">
+        </div>
+        
+        <div>
+            <input type="tel" placeholder="Enter Your Mobile Number" required aria-placeholder="Enter Your Mobile Number" aria-required="true">
+        </div>
+        <div>
+            <input type="password" placeholder="Enter Your Password" required aria-placeholder="Enter Your Password"
+                aria-required="true" minlength="8" maxlength="64">
+        </div>
+        <div>
+            <label for="">By checking this checkbox you accept our terms</label>
+            <input type="checkbox" name="" id="">
+        </div>
+    </form>
+</body>
+
+</html>

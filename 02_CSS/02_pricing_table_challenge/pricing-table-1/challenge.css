@@ -1,0 +1,135 @@
+/* Challenge CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+}
+
+.container {
+  /* Add your styles here */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  /* Add your styles here */
+  font-size: 54px;
+}
+
+.pricing-heading {
+  /* Add your styles here */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+  gap: 8px;
+}
+
+.pricing-container {
+  /* Add your styles here */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 35px;
+}
+
+.pricing-card {
+  /* Add your styles here */
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px ;
+  box-shadow: 1px 1px 10px  black ;
+}
+
+.pricing-card:hover {
+  /* Add your styles here */
+  width: 35%;
+  font-size: 1.1rem;
+}
+
+.pricing-card.popular {
+  /* Add your styles here */
+  width: 33%;
+  font-size: 1.2rem;
+  border: 2px solid #FF7800;
+  padding: 20px;
+}
+
+.popular-badge {
+  /* Add your styles here */
+  background-color: #FF7800;
+  padding: 16px;
+  border-radius: 30px;
+  position: absolute;
+  top: 132px;
+}
+
+.price {
+  /* Add your styles here */
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.period {
+  /* Add your styles here */
+  color: #606060;
+  font-weight: 400;
+}
+
+.features {
+  /* Add your styles here */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.features li {
+  /* Add your styles here */
+  list-style-type: none;
+  text-align: left;
+  margin-top: 5px;
+  /* list-style-image: url('https://cdn-icons-png.flaticon.com/128/3234/3234827.png'); */
+  /* font-size: 1.1rem; */
+}
+
+li::before {
+    content: '';
+    display: inline-block; /* Allows for sizing */
+    width: 20px; /* Set desired width */
+    height: 20px; /* Set desired height */
+    background-image: url('https://cdn-icons-png.flaticon.com/128/3234/3234827.png');
+    background-size: contain; /* Adjusts size to fit */
+    background-repeat: no-repeat; /* Prevents repeating */
+    margin-right: 10px; /* Space between image and text */
+}
+
+.subscribe-btn {
+  /* Add your styles here */
+  border: none;
+  background-color: #FF7800;
+  font-size: 16px;
+  padding: 16px;
+  border-radius: 30px;
+  color: #ffffff;
+}
+
+.subscribe-btn:hover {
+  /* Add your styles here */
+  background-color: #c75e02;
+}

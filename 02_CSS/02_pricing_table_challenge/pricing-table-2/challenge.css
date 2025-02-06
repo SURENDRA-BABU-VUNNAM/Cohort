@@ -1,0 +1,201 @@
+/* Challenge CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #1A1A1A;
+}
+
+.container {
+  /* Add your styles here */
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header {
+  /* Add your styles here */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 40px;
+}
+
+h1 {
+  /* Add your styles here */
+  font-size: 54px;
+  color: #FE6A6A;
+}
+
+.subtitle {
+  /* Add your styles here */
+  font-size: 20px;
+  font-weight: bold;
+  color: #6D6D6D;
+}
+
+.pricing-container {
+  /* Add your styles here */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 35px;
+}
+
+.pricing-card {
+  /* Add your styles here */
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 40px;
+  background-color: rgb(38, 38, 38);
+  border-radius: 8px ;
+  box-shadow: 1px 1px 10px  black ;
+}
+
+.pricing-card:hover {
+  /* Add your styles here */
+    width: 35%;
+  font-size: 1.1rem;
+}
+
+.card-header {
+  /* Add your styles here */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+.icon {
+  /* Add your styles here */
+  font-size: 20px;
+}
+
+.popular-tag {
+  /* Add your styles here */
+  background-color: #FFD93D;
+  padding: 10px;
+  border-radius: 25px;
+  position: absolute;
+  top: 225px;
+}
+
+.price-block {
+  /* Add your styles here */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(48, 48, 48);
+  height: 100px;
+  width: 125px;
+  border-radius: 25px;
+}
+
+.price {
+  /* Add your styles here */
+  font-size: 32px;
+  font-weight: 600;
+  color: #FE6A6A;
+}
+
+.period {
+  /* Add your styles here */
+  font-size: 18px;
+  font-weight: 100;
+  color: #6D6D6D;
+}
+
+.features {
+  /* Add your styles here */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+}
+
+.features li {
+  /* Add your styles here */
+  list-style: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #AEAEAE;
+}
+
+.features li.disabled {
+  /* Add your styles here */
+  font-weight: 100;
+}
+
+.join-btn {
+  /* Add your styles here */
+  display:flex ;
+  justify-content: center;
+  align-items: center;
+  background:none;
+  color: #FE6A6A;
+  border: 2px solid #FE6A6A;
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.join-btn:hover {
+  /* Add your styles here */
+  background-color: #FE6A6A;
+  color: #ffffff;
+}
+
+/* Custom Class Modifiers */
+.warrior {
+  /* Add your styles here */
+  background-color: rgb(49, 34, 34);
+  border: 2px solid #FE6A6A;
+}
+
+.warrior .price-block {
+  background-color: rgb(60, 45, 45);
+}
+
+.champion {
+  /* Add your styles here */
+  background-color: rgb(49, 45, 29);
+  border: 2px solid #ffd93d;
+}
+
+.champion .price-block {
+  background-color: rgb(60, 56, 41);
+}
+
+.champion .price {
+  /* Add your styles here */
+  color: #FFD93D;
+}
+
+.champion .join-btn {
+  /* Add your styles here */
+  border: 2px solid #FFD93D;
+  color: #FFD93D;
+}
+
+.champion .join-btn:hover {
+  /* Add your styles here */
+  color: #ffffff;
+  background-color: #FFD93D;
+}
