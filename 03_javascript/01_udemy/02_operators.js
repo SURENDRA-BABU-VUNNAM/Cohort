@@ -1,0 +1,1 @@
+let totalScore = 230

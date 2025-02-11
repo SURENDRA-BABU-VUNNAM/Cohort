@@ -13,3 +13,9 @@ function invertedMountain(n) {
 }
 
 invertedMountain(4)
+
+console.log(invertedMountain(4))
+
+let hello = "mangekyo"
+
+console.log(hello);
